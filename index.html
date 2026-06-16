@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krish Kondabatni — Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  /* Page-specific styles for the home hero only */
+  header.hero{
+    padding:96px 0 72px;
+    border-bottom:1px solid var(--line);
+  }
+  h1.title{
+    font-family:var(--display);
+    font-size:clamp(38px, 5.5vw, 64px);
+    font-weight:600;
+    line-height:1.05;
+    letter-spacing:-0.01em;
+    max-width:780px;
+  }
+  h1.title em{font-style:normal;color:var(--accent);}
+  .hero-sub{
+    margin-top:22px;
+    font-size:18px;
+    color:var(--ink-soft);
+    max-width:560px;
+    line-height:1.6;
+  }
+  .hero-actions{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap;}
+  .btn-primary{
+    font-family:var(--mono);
+    font-size:14px;
+    background:var(--accent);
+    color:#06160E;
+    padding:12px 22px;
+    border-radius:3px;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    transition:transform .15s ease, box-shadow .15s ease;
+    font-weight:500;
+  }
+  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 0 24px rgba(110,231,168,0.35);}
+  .btn-secondary{
+    font-family:var(--mono);
+    font-size:14px;
+    border:1px solid var(--line);
+    padding:12px 22px;
+    border-radius:3px;
+    color:var(--ink);
+    transition:border-color .15s ease;
+  }
+  .btn-secondary:hover{border-color:var(--accent);}
+
+  .query-strip{
+    margin-top:56px;
+    border:1px solid var(--line);
+    border-radius:6px;
+    background:var(--card);
+    overflow:hidden;
+    box-shadow:0 0 0 1px rgba(110,231,168,0.04), 0 20px 60px -20px rgba(0,0,0,0.6);
+  }
+  .query-strip-head{
+    display:flex;align-items:center;gap:8px;padding:10px 16px;
+    border-bottom:1px solid var(--line);
+    font-family:var(--mono);font-size:12px;color:var(--ink-soft);
+  }
+  .query-strip-head .dots{display:flex;gap:6px;}
+  .query-strip-head .dots span{width:8px;height:8px;border-radius:50%;background:var(--line);}
+  .query-body{display:grid;grid-template-columns:1.3fr 1fr;}
+  .query-code{
+    font-family:var(--mono);font-size:13px;line-height:1.7;
+    padding:20px 22px;color:var(--ink-soft);
+    border-right:1px solid var(--line);overflow-x:auto;white-space:pre;
+  }
+  .query-code .kw{color:var(--accent);font-weight:500;}
+  .query-result{padding:18px 22px;font-family:var(--mono);font-size:13px;}
+  .query-result table{width:100%;border-collapse:collapse;}
+  .query-result th{
+    text-align:left;color:var(--ink-soft);font-weight:500;font-size:11px;
+    text-transform:uppercase;letter-spacing:0.04em;padding-bottom:8px;
+    border-bottom:1px solid var(--line);
+  }
+  .query-result td{padding:7px 0;border-bottom:1px solid var(--line);color:var(--ink);}
+  .query-result tr:last-child td{border-bottom:none;}
+  .query-result .num{color:var(--accent);}
+
+  /* quick links to other pages */
+  .quicklinks{padding:64px 0;}
+  .ql-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .ql-card{
+    border:1px solid var(--line);border-radius:8px;padding:24px;
+    background:var(--card);transition:border-color .15s ease, transform .15s ease;
+  }
+  .ql-card:hover{border-color:var(--accent);transform:translateY(-2px);}
+  .ql-card .ql-num{font-family:var(--mono);font-size:12px;color:var(--accent);margin-bottom:10px;}
+  .ql-card h3{font-family:var(--display);font-size:18px;font-weight:600;margin-bottom:8px;}
+  .ql-card p{font-size:13px;color:var(--ink-soft);}
+
+  @media (max-width:720px){
+    .query-body{grid-template-columns:1fr;}
+    .query-code{border-right:none;border-bottom:1px solid var(--line);}
+    .ql-grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">KRISH<span>.K</span></div>
+    <div class="navlinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+    </div>
+    <a class="nav-cta" href="contact.html">Get in touch</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span>OPEN TO WORK — BANGALORE</div>
+    <h1 class="title">I query the mess<br>so the business can see <em>what's true.</em></h1>
+    <p class="hero-sub">Data Analyst with 2+ years across e-commerce and B2B SaaS — turning raw, inconsistent datasets into dashboards, forecasts, and decisions that teams actually act on.</p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="contact.html">Hire me ↗</a>
+      <a class="btn-secondary" href="projects.html">View projects</a>
+    </div>
+
+    <div class="query-strip">
+      <div class="query-strip-head">
+        <div class="dots"><span></span><span></span><span></span></div>
+        query_console — sales_analysis.sql
+      </div>
+      <div class="query-body">
+        <div class="query-code"><span class="kw">SELECT</span> region,
+       <span class="kw">SUM</span>(revenue) <span class="kw">AS</span> total_sales
+<span class="kw">FROM</span> store_orders
+<span class="kw">WHERE</span> order_date >= <span class="kw">DATEADD</span>(month,-3, current_date)
+<span class="kw">GROUP BY</span> region
+<span class="kw">ORDER BY</span> total_sales <span class="kw">DESC</span>;</div>
+        <div class="query-result">
+          <table>
+            <tr><th>Region</th><th>Total Sales</th></tr>
+            <tr><td>South</td><td class="num">₹21.6L</td></tr>
+            <tr><td>West</td><td class="num">₹28.8L</td></tr>
+            <tr><td>North</td><td class="num">₹13.9L</td></tr>
+            <tr><td>East</td><td class="num">₹18.2L</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="quicklinks">
+  <div class="wrap">
+    <div class="ql-grid">
+      <a class="ql-card" href="about.html">
+        <div class="ql-num">01</div>
+        <h3>About &amp; Skills →</h3>
+        <p>Who I am, my stack, and what I'm looking for next.</p>
+      </a>
+      <a class="ql-card" href="experience.html">
+        <div class="ql-num">02</div>
+        <h3>Experience →</h3>
+        <p>Aviasole Technologies &amp; Gavyamart — what I actually did.</p>
+      </a>
+      <a class="ql-card" href="projects.html">
+        <div class="ql-num">03</div>
+        <h3>Projects →</h3>
+        <p>Coffee Shop dashboard, churn analysis, and more coming soon.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Krish Kondabatni</span>
+    <span>Built with HTML &amp; CSS</span>
+  </div>
+</footer>
+
+</body>
+</html>

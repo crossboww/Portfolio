@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Krish Kondabatni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;}
+  .about-text p{font-size:16px;color:var(--ink-soft);margin-bottom:16px;max-width:480px;}
+  .about-text strong{color:var(--ink);font-weight:600;}
+  .skills-col{display:flex;flex-direction:column;gap:18px;}
+  .skill-row{
+    display:grid;grid-template-columns:120px 1fr;align-items:baseline;gap:16px;
+    padding-bottom:14px;border-bottom:1px solid var(--line);
+  }
+  .skill-row:last-child{border-bottom:none;padding-bottom:0;}
+  .skill-label{
+    font-family:var(--mono);font-size:12px;color:var(--accent);
+    text-transform:uppercase;letter-spacing:0.04em;
+  }
+  .skill-items{font-size:14px;color:var(--ink-soft);}
+  @media (max-width:780px){.about-grid{grid-template-columns:1fr;gap:36px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">KRISH<span>.K</span></div>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+    </div>
+    <a class="nav-cta" href="contact.html">Get in touch</a>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span>01 — ABOUT</div>
+    <h1 class="page-title">Who I am, <em>and what I'm good at.</em></h1>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm a Data Analyst who got here by actually cleaning the spreadsheets nobody wanted to touch — <strong>15+ client datasets a week</strong>, ranging from 1,000 to 100,000+ rows. That work taught me what most dashboards skip: data is only useful once you've earned trust in it.</p>
+        <p>Since then I've automated reporting pipelines, written the SQL that answers "why did sales drop," and built Power BI dashboards that store managers check every morning — not just executives once a quarter.</p>
+        <p>I'm currently looking for <strong>Data Analyst, Product Analyst, or BI roles</strong> at startups in D2C, fintech, or B2B SaaS — places where one good query can change what the team does next.</p>
+        <p>B.E. in Information Science &amp; Engineering (VTU) · Data Science Certification, Besant Technologies.</p>
+      </div>
+      <div class="skills-col">
+        <div class="skill-row"><span class="skill-label">Languages</span><span class="skill-items">SQL, Python (Pandas, NumPy)</span></div>
+        <div class="skill-row"><span class="skill-label">BI &amp; Viz</span><span class="skill-items">Power BI, Excel (Pivot Tables, VLOOKUP), Matplotlib, Seaborn</span></div>
+        <div class="skill-row"><span class="skill-label">Data Work</span><span class="skill-items">EDA, Data Cleaning &amp; Validation, ETL, Statistical Analysis</span></div>
+        <div class="skill-row"><span class="skill-label">ML / AI</span><span class="skill-items">Scikit-learn, NLP (NLTK, SpaCy), LLM Fundamentals</span></div>
+        <div class="skill-row"><span class="skill-label">Databases</span><span class="skill-items">MySQL, PostgreSQL, MongoDB</span></div>
+        <div class="skill-row"><span class="skill-label">Other</span><span class="skill-items">Git/GitHub, FastAPI, Docker, AWS (EC2)</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Krish Kondabatni</span>
+    <span>Built with HTML &amp; CSS</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience — Krish Kondabatni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .exp-item{
+    display:grid;grid-template-columns:220px 1fr;gap:32px;
+    padding:32px 0;border-top:1px solid var(--line);
+  }
+  .exp-item:first-of-type{border-top:none;}
+  .exp-meta{font-family:var(--mono);font-size:13px;color:var(--ink-soft);}
+  .exp-meta .role{
+    display:block;font-family:var(--display);font-size:18px;font-weight:600;
+    color:var(--ink);margin-bottom:4px;
+  }
+  .exp-meta .dates{display:block;margin-top:6px;color:var(--accent);}
+  .exp-body ul{list-style:none;}
+  .exp-body li{
+    position:relative;padding-left:20px;margin-bottom:12px;
+    font-size:15px;color:var(--ink-soft);line-height:1.6;
+  }
+  .exp-body li::before{content:"›";position:absolute;left:0;color:var(--accent);font-weight:600;}
+  .exp-body strong{color:var(--ink);font-weight:600;}
+  @media (max-width:720px){.exp-item{grid-template-columns:1fr;gap:12px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">KRISH<span>.K</span></div>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html" class="active">Experience</a>
+      <a href="projects.html">Projects</a>
+    </div>
+    <a class="nav-cta" href="contact.html">Get in touch</a>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span>02 — EXPERIENCE</div>
+    <h1 class="page-title">Where I've <em>actually worked.</em></h1>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="exp-item">
+      <div class="exp-meta">
+        <span class="role">Data Analyst</span>
+        Aviasole Technologies
+        <span class="dates">May 2025 – Mar 2026</span>
+      </div>
+      <div class="exp-body">
+        <ul>
+          <li>Validated <strong>15+ client-sent datasets weekly</strong> (1,000–100,000+ rows each), running format checks and cleaning in Excel/Python to keep downstream reporting reliable.</li>
+          <li>Automated cleaning and transformation workflows with <strong>Python (Pandas)</strong>, cutting manual processing time by ~30% across 15+ datasets/week.</li>
+          <li>Wrote and optimized <strong>20+ advanced SQL queries</strong> — joins, sub-queries, filters — to validate data and surface insights for daily business reporting.</li>
+          <li>Worked directly with <strong>3 external clients</strong> to gather requirements and deliver daily EOD reports on data quality and key findings.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <span class="role">Data Analyst Intern</span>
+        Gavyamart (Remote)
+        <span class="dates">Feb 2024 – May 2025</span>
+      </div>
+      <div class="exp-body">
+        <ul>
+          <li>Cut manual reporting time by <strong>40%</strong> by automating daily/weekly sales reports in Advanced Excel and SQL.</li>
+          <li>Tracked daily sales across categories to identify top-performing SKUs, optimizing marketing spend and revenue allocation.</li>
+          <li>Mapped user journeys via <strong>Google Analytics</strong>, found checkout drop-off points, and recommended UX fixes to lift conversion.</li>
+          <li>Calculated <strong>CAC and LTV</strong> to evaluate ad campaigns; maintained a 500+ SKU catalog with accurate pricing.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Krish Kondabatni</span>
+    <span>Built with HTML &amp; CSS</span>
+  </div>
+</footer>
+
+</body>
+</html>
